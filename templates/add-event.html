@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление работы
+{% endblock %}
+
+{% block body %}
+<div class='container mt-5'>
+    <h1>Добавить работу</h1>
+    <form  name="yourForm" id="theForm" method="post"><br>
+    <input type="text" name="Name" id="Name" placeholder="Название работы" /><br>
+    <input type="text" name="Type" id="Type" placeholder="Вид работы"/><br>
+    <input type="date" name="Data" id="Data" placeholder="Дата создания"/> -Дата создание</input><br>
+    <input type="text" name="Name_house" id="Name_house" placeholder="Имя выставки" value='{{ house.Name }}' />-Имя выставки</input><br>
+    <p><input type="submit" value="Отправить" class="btn btn-success"   /></p>
+    </form>
+</div>
+{% endblock %}
